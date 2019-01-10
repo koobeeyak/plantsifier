@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Employee.associate = (models) => {
     Employee.belongsTo(models.Plant, {
-      foreignKey: 'favoritePlantId'
+      foreignKey: 'favoritePlantId',
+      onDelete: 'SET NULL'
     });
   };
   return Employee;

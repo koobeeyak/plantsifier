@@ -19,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {});
   Plant.associate = (models) => {
-    Plant.hasMany(models.Employee);
+    Plant.hasMany(models.Employee, {
+      foreignKey: 'favoritePlantId',
+    });
   };
   return Plant;
 };
