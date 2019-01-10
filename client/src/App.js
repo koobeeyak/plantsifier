@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import PlantsTable from './components/PlantsTable.container';
+import PlantsifierBody from './components/PlantsifierBody.container';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PlantsTable />
+        <PlantsifierBody />
       </div>
     );
   }
