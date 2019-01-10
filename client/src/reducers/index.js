@@ -4,5 +4,5 @@ import employees from './employees';
 
 export default combineReducers({
   plants,
-  employees
+  employees,
 });

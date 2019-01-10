@@ -4,7 +4,7 @@ import { plantsLoadingSelector } from '../reducers/plants';
 import PlantsTableComponent from './PlantsTable.component';
 
 const mapStateToProps = ({ plants }) => ({
-  arePlantsLoading: plantsLoadingSelector(plants)
+  arePlantsLoading: plantsLoadingSelector(plants),
 });
 
 const PlantsTable = connect(mapStateToProps)(PlantsTableComponent);

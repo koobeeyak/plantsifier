@@ -7,7 +7,7 @@ import {
 const defaultState = {
   data: [],
   loading: false,
-  errorMessage: ''
+  errorMessage: '',
 };
 
 export default (state = defaultState, action) => {
@@ -15,24 +15,24 @@ export default (state = defaultState, action) => {
     case GET_PLANTS_REQUEST:
       return {
         ...state,
-        loading: true
-      }
+        loading: true,
+      };
     case GET_PLANTS_SUCCESS:
       return {
         ...state,
         data: action.data,
-        loading: false
-      }
+        loading: false,
+      };
     case GET_PLANTS_FAILURE:
       return {
         ...state,
         loading: false,
-        errorMessage: action.errorMessage
-      }
+        errorMessage: action.errorMessage,
+      };
     default:
       return state;
   }
-}
+};
 
 export const plantsLoadingSelector = ({ loading }) => loading;
 export const plantsSelector = ({ data }) => data;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PlantsTable = ({ arePlantsLoading }) => (
   <span>
-    {`Am I loading plants? ${ arePlantsLoading }`}
+    {`Am I loading plants? ${arePlantsLoading}`}
   </span>
 );
 

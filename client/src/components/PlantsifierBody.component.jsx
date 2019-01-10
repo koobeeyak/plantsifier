@@ -6,11 +6,12 @@ class PlantsifierBody extends Component {
   componentDidMount() {
     this.props.fetchApiData();
   }
+
   render() {
     return (
       <PlantsTable />
     );
   }
-};
+}
 
 export default PlantsifierBody;

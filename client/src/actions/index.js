@@ -6,29 +6,29 @@ export const GET_EMPLOYEES_FAILURE = 'GET_EMPLOYEES_FAILURE';
 export const GET_EMPLOYEES_SUCCESS = 'GET_EMPLOYEES_SUCCESS';
 
 export const getPlantsRequest = () => ({
-  type: GET_PLANTS_REQUEST
-})
-
-export const getPlantsFailure = (errorMessage) => ({
-  type: GET_PLANTS_FAILURE,
-  errorMessage
+  type: GET_PLANTS_REQUEST,
 });
 
-export const getPlantsSuccess = (data) => ({
+export const getPlantsFailure = errorMessage => ({
+  type: GET_PLANTS_FAILURE,
+  errorMessage,
+});
+
+export const getPlantsSuccess = data => ({
   type: GET_PLANTS_SUCCESS,
-  data
+  data,
 });
 
 export const getEmployeesRequest = () => ({
-  type: GET_EMPLOYEES_REQUEST
-})
-
-export const getEmployeesFailure = (errorMessage) => ({
-  type: GET_EMPLOYEES_FAILURE,
-  errorMessage
+  type: GET_EMPLOYEES_REQUEST,
 });
 
-export const getEmployeesSuccess = (data) => ({
+export const getEmployeesFailure = errorMessage => ({
+  type: GET_EMPLOYEES_FAILURE,
+  errorMessage,
+});
+
+export const getEmployeesSuccess = data => ({
   type: GET_EMPLOYEES_SUCCESS,
-  data
+  data,
 });
