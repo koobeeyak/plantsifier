@@ -52,8 +52,8 @@ module.exports = [
     ...createdAndUpdatedAt,
   },
   {
-    commonName: 'Bird\'s Nest Fern',
-    shortDescription: 'The classic choice for your interior office design.',
+    commonName: 'Alocasia Polly',
+    shortDescription: 'A very awesome piece of foliage.',
     longDescription: baconIpsum,
     imageUrl: 'https://en.wikipedia.org/wiki/Asplenium_nidus#/media/File:Asplenium_nidus_seedling.jpg',
     ...createdAndUpdatedAt,
