@@ -3,13 +3,11 @@ const createdAndUpdatedAt = {
   updatedAt: new Date()
 }
 
-const baconIpsum = `
-Bacon ipsum dolor amet tail landjaeger consequat, turkey chicken chuck
-drumstick cupim doner pastrami. Ribeye chicken cupim spare ribs brisket
-nostrud enim irure laboris sunt short loin salami. Drumstick exercitation
-elit non shankle nostrud est reprehenderit deserunt culpa rump meatball.
-Nostrud pig t-bone, incididunt et pancetta consectetur turkey fugiat.
-`
+const baconIpsum = "Bacon ipsum dolor amet tail landjaeger consequat, turkey \
+chicken chuck drumstick cupim doner pastrami. Ribeye chicken cupim spare ribs \
+brisket nostrud enim irure laboris sunt short loin salami. Drumstick exercitation \
+elit non shankle nostrud est reprehenderit deserunt culpa rump meatball. \
+Nostrud pig t-bone, incididunt et pancetta consectetur turkey fugiat."
 
 module.exports = [
   {
