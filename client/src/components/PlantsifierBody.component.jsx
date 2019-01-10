@@ -11,7 +11,7 @@ class PlantsifierBody extends Component {
 
   render() {
     return (
-      <div>
+      <div className="plantsifier_body">
         {this.props.arePlantsLoading && <LoadingMessage />}
         {this.props.plantsErrorMessage
           && <ErrorMessage errorMessage={this.props.plantsErrorMessage} />}

@@ -1,0 +1,15 @@
+@import './variables.scss';
+.App {
+  text-align: center;
+}
+
+.plantsifier_body {
+
+  .plantsifier_body__message--error {
+    color: $warning-primary-color;
+  }
+
+  .plantsifier_body__message--loading {
+    color: $info-primary-color;
+  }
+}
