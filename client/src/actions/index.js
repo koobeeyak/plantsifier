@@ -2,9 +2,9 @@ export const GET_PLANTS_REQUEST = 'GET_PLANTS_REQUEST';
 const GET_PLANTS_FAILURE = 'GET_PLANTS_FAILURE';
 const GET_PLANTS_SUCCESS = 'GET_PLANTS_SUCCESS';
 
-export const getPlantsFailure = (error) => ({
+export const getPlantsFailure = (errorMessage) => ({
   type: GET_PLANTS_FAILURE,
-  error
+  errorMessage
 });
 
 export const getPlantsSuccess = (data) => ({

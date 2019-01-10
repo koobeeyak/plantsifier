@@ -9,7 +9,8 @@ function* getPlants() {
         const data = yield call(getPlantsApiCall);
         yield put(getPlantsSuccess(data));
     } catch (error) {
-        yield put(getPlantsFailure(error));
+      // TODO extract the message string from whatever the error here looks like
+        yield put(getPlantsFailure(error.message));
     }
 }
 
