@@ -1,7 +1,7 @@
 import {
-  GET_PLANTS_REQUEST,
-  GET_PLANTS_SUCCESS,
-  GET_PLANTS_FAILURE,
+  GET_EMPLOYEES_REQUEST,
+  GET_EMPLOYEES_SUCCESS,
+  GET_EMPLOYEES_FAILURE
 } from '../actions';
 
 const defaultState = {
@@ -12,18 +12,18 @@ const defaultState = {
 
 export default (state = defaultState, action) => {
   switch (action.type) {
-    case GET_PLANTS_REQUEST:
+    case GET_EMPLOYEES_REQUEST:
       return {
         ...state,
         loading: true
       }
-    case GET_PLANTS_SUCCESS:
+    case GET_EMPLOYEES_SUCCESS:
       return {
         ...state,
         data: action.data,
         loading: false
       }
-    case GET_PLANTS_FAILURE:
+    case GET_EMPLOYEES_FAILURE:
       return {
         ...state,
         loading: false,
@@ -34,5 +34,5 @@ export default (state = defaultState, action) => {
   }
 }
 
-export const plantsLoadingSelector = ({ loading }) => loading;
-export const plantsSelector = ({ data }) => data;
+export const employeesLoadingSelector = ({ loading }) => loading;
+export const employeesSelector = ({ data }) => data;

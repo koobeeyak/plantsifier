@@ -1,12 +1,15 @@
 import { connect } from 'react-redux';
 
-import { getPlantsRequest } from '../actions';
+import { getPlantsRequest, getEmployeesRequest } from '../actions';
 import PlantsifierBodyComponent from './PlantsifierBody.component';
 
 const mapDispatchToProps = (dispatch) => ({
-  getPlantsRequest: () => dispatch(getPlantsRequest())
+  fetchApiData: () => {
+    dispatch(getPlantsRequest());
+    dispatch(getEmployeesRequest());
+  }
 });
 
-const PlantsifierBody = connect(() => ({}), mapDispatchToProps)(PlantsifierBodyComponent);
+const PlantsifierBody = connect(null, mapDispatchToProps)(PlantsifierBodyComponent);
 
 export default PlantsifierBody;

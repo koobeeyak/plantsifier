@@ -4,7 +4,7 @@ import PlantsTable from './PlantsTable.container';
 
 class PlantsifierBody extends Component {
   componentDidMount() {
-    this.props.getPlantsRequest();
+    this.props.fetchApiData();
   }
   render() {
     return (

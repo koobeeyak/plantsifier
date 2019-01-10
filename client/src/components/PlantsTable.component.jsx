@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PlantsTable = ({ isLoading }) => (
+const PlantsTable = ({ arePlantsLoading }) => (
   <span>
-    {`Am I loading plants? ${ isLoading }`}
+    {`Am I loading plants? ${ arePlantsLoading }`}
   </span>
 );
 
