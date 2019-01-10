@@ -23,6 +23,16 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      favoritePlantId: {
+        allowNull: true,
+        type: Sequelize.INTEGER,
+        onDelete: 'SET NULL',
+        references: {
+          model: 'Plants',
+          key: 'id',
+          as: 'favoritePlantId'
+        }
       }
     });
   },

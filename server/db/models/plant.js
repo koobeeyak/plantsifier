@@ -1,21 +1,25 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Plant = sequelize.define('Plant', {
-    common_name: {
+    commonName: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false
+    shortDescription: {
+      type: DataTypes.TEXT,
+      allowNull: true
     },
-    image_url: {
+    longDescription: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    imageUrl: {
       type: DataTypes.STRING,
       allowNull: true
     }
   }, {});
   Plant.associate = (models) => {
-    // associations can be defined here
+    Plant.hasMany(models.Employee);
   };
   return Plant;
 };

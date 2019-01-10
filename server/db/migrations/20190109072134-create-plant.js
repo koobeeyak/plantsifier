@@ -8,15 +8,19 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      common_name: {
+      commonName: {
         allowNull: false,
         type: Sequelize.STRING
       },
-      description: {
-        allowNull: false,
-        type: Sequelize.STRING
+      shortDescription: {
+        allowNull: true,
+        type: Sequelize.TEXT
       },
-      image_url: {
+      longDescription: {
+        allowNull: true,
+        type: Sequelize.TEXT
+      },
+      imageUrl: {
         allowNull: true,
         type: Sequelize.STRING
       },
