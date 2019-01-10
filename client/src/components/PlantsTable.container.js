@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 
-import { plantsLoadingSelector } from '../reducers/plants';
+import { plantsDataSelector } from '../reducers/plants';
 import PlantsTableComponent from './PlantsTable.component';
 
 const mapStateToProps = ({ plants }) => ({
-  arePlantsLoading: plantsLoadingSelector(plants),
+  plants: plantsDataSelector(plants),
 });
 
 const PlantsTable = connect(mapStateToProps)(PlantsTableComponent);

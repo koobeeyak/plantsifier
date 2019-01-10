@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import PlantsTable from './PlantsTable.container';
+import LoadingMessage from './LoadingMessage';
+import ErrorMessage from './ErrorMessage';
 
 class PlantsifierBody extends Component {
   componentDidMount() {
@@ -9,7 +11,12 @@ class PlantsifierBody extends Component {
 
   render() {
     return (
-      <PlantsTable />
+      <div>
+        {this.props.arePlantsLoading && <LoadingMessage />}
+        {this.props.plantsErrorMessage
+          && <ErrorMessage errorMessage={this.props.plantsErrorMessage} />}
+        <PlantsTable />
+      </div>
     );
   }
 }

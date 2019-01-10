@@ -1,9 +1,13 @@
 import React from 'react';
 
-const PlantsTable = ({ arePlantsLoading }) => (
-  <span>
-    {`Am I loading plants? ${arePlantsLoading}`}
-  </span>
+const PlantsTable = ({ plants }) => (
+  <div>
+    {
+      plants.map(plant => (
+        <p key={plant.id}>{plant.commonName}</p>
+      ))
+    }
+  </div>
 );
 
 export default PlantsTable;

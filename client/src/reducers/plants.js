@@ -35,4 +35,5 @@ export default (state = defaultState, action) => {
 };
 
 export const plantsLoadingSelector = ({ loading }) => loading;
-export const plantsSelector = ({ data }) => data;
+export const plantsErrorMessageSelector = ({ errorMessage }) => errorMessage;
+export const plantsDataSelector = ({ data }) => data;
