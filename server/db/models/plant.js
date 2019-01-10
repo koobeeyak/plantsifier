@@ -1,22 +1,22 @@
-'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   const Plant = sequelize.define('Plant', {
     commonName: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     shortDescription: {
       type: DataTypes.TEXT,
-      allowNull: true
+      allowNull: true,
     },
     longDescription: {
       type: DataTypes.TEXT,
-      allowNull: true
+      allowNull: true,
     },
     imageUrl: {
       type: DataTypes.STRING,
-      allowNull: true
-    }
+      allowNull: true,
+    },
   }, {});
   Plant.associate = (models) => {
     Plant.hasMany(models.Employee, {

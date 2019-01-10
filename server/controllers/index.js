@@ -3,5 +3,5 @@ const plantController = require('./plant');
 
 module.exports = {
   employeeController,
-  plantController
+  plantController,
 };

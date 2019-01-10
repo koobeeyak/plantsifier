@@ -2,28 +2,28 @@ const generateRandomBCryptPasswordHash = require('../../utils').generateRandomBC
 
 const createdAndUpdatedAt = {
   createdAt: new Date(),
-  updatedAt: new Date()
-}
+  updatedAt: new Date(),
+};
 
 module.exports = [
   {
     username: 'andré',
     password: generateRandomBCryptPasswordHash(),
-    ...createdAndUpdatedAt
+    ...createdAndUpdatedAt,
   },
   {
     username: 'jake',
     password: generateRandomBCryptPasswordHash(),
-    ...createdAndUpdatedAt
+    ...createdAndUpdatedAt,
   },
   {
     username: 'shaneeza',
     password: generateRandomBCryptPasswordHash(),
-    ...createdAndUpdatedAt
+    ...createdAndUpdatedAt,
   },
   {
     username: 'kevin',
     password: generateRandomBCryptPasswordHash(),
-    ...createdAndUpdatedAt
-  }
-]
+    ...createdAndUpdatedAt,
+  },
+];
